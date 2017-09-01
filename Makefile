@@ -1,7 +1,7 @@
 all: fakename.o
 
 fakename.o:
-	gcc fakename.c -o fakename.o
+	$(CC) $(CFLAGS) fakename.c -o fakename.o
 
 install: all
 	mkdir -p $(DESTDIR)/usr/bin
